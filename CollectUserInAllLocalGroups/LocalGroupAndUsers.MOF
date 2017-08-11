@@ -1,0 +1,12 @@
+[ SMS_Report (TRUE),
+  SMS_Group_Name ("UserInLocalGroup"),
+  SMS_Class_ID ("MICROSOFT|UserInLocalGroup|1.0"),
+  Namespace ("root\\\\cimv2") ]
+class WIN32_UserInLocalGroup : SMS_Class_Template
+{
+    [SMS_Report (TRUE), key ] string Account;
+    [SMS_Report (TRUE)      ] string Domain;
+    [SMS_Report (TRUE), key ] string Name;
+	[SMS_Report (TRUE), key ] string Group;
+    [SMS_Report (TRUE)      ] string Type; 
+};
